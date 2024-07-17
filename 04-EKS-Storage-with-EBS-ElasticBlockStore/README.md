@@ -1,3 +1,22 @@
+#Pros and Cons
+After using the persistent volume and persistent volume claim, I must say its always beneficial to use both when you are working in the production environment because you can not just delete the data after the end of the POD cycle.
+
+The most favorable use case which I can see setting up the database such as MySQL, Oracle, Postgress inside the persistent volume so that it is always there irrespective of your POD life cycle.
+
+But here I collected some of the Pros and Cons of using PV and PVC -
+
+Pros
+Storing and archiving the logs
+Setting up the database
+Useful for application handling a large number of batch jobs
+Storing configs of application
+Independent from PODs life-cycle
+Easy to use
+Easy to backup
+Cons
+Can not be used to store transnational data for performance-intensive application
+You need to set up your own backup policies
+Couldn't be used for HA(High Availability)
 # AWS EKS Storage
 
 ## AWS EBS CSI Driver
