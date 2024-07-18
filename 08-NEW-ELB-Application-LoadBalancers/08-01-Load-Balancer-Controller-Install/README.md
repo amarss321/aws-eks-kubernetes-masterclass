@@ -114,7 +114,7 @@ rm iam_policy_latest.json
 
 # Download IAM Policy
 ## Download latest
-curl -o iam_policy_latest.json https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/main/docs/install/iam_policy.json
+'''curl -o iam_policy_latest.json https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/main/docs/install/iam_policy.json '''
 ## Verify latest
 ls -lrta 
 
